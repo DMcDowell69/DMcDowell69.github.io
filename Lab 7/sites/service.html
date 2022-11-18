@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<!--Dustin McDowell
+    SIU
+    date developed 9/22/2022
+    date tested 10/27/2022-->
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Services</title>
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/rollover.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+        <body>
+            <header>
+                <div class="serviceimg">
+                    <img src="../images/bicycle3.jpg" alt="topservice" width="300">
+                </div>
+                <nav id="mobile_menu"></nav>
+                <nav id="nav_menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rentals.html">Rentals</a></li>
+                        <li><a href="sales.html">Sales</a></li>
+                        <li><a class="active" href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Table-->
+            <table>
+                <caption>
+                    Prices may vary.
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="6">Services</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Bikes</th>
+                        <th>Rentals<br>Per day</th>
+                        <th>Repairs</th>
+                        <th>Sales</th>
+                        <th>Maintenance</th>
+                        <th>Ratings</th>
+                    </tr>
+                    <tr>
+                        <th>BMX Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$213</td>
+                        <td>$15</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <th>Mountain Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$148</td>
+                        <td>$15</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <th>Road Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$169</td>
+                        <td>$15</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <th>Electric Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$619</td>
+                        <td>$15</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <th>Track Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$300</td>
+                        <td>$15</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <th>Recumbent Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$281</td>
+                        <td>$15</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <th>Cruiser Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$148</td>
+                        <td>$15</td>
+                        <td>8/10</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Folding Bike</th>
+                        <td>$45</td>
+                        <td>Up to $60</td>
+                        <td>$88</td>
+                        <td>$15</td>
+                        <td>5/10</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--rollover img-->
+            <div class="rollimg" id="image_rollovers">
+                <img src="../images/bicycle.jpg" alt="rollimg" width="300" id="../images/bicycle2.jpg">
+            </div>
+            <p class="l">How to contact Dustin McDowell &amp; Staff:</p> <address>1-800-360-4000<br>
+                <a href="emailto:owner@mbk.com">owner@mcdowellsbikes.com</a> </address>
+            <pre>
+                <!-- my address -->
+                Store Address:
+                
+                McDowell's Bikes
+                360 valley Drive
+                Rockford
+                IL, 61016
+            </pre>
+        </body>
+</html>
