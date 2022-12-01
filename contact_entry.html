@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--Dustin McDowell
+    SIU
+    date developed 9/22/2022
+    date tested 11/3/2022-->
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Entry</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/rollover.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+        <body>
+            <header>
+                <div class="headimg">
+                    <img src="images/logo.jpg" alt="Logo" width="500">
+                </div>
+                <nav id="mobile_menu"></nav>
+                <nav id="nav_menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="cake.html">Cakes</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>
+                Thanks you for sending your information in.
+            </h1>
+            <h1>
+                We will be with you when we get the chance.
+            </h1>
+            <p class="l">How to contact Cheyanne Ramsey &amp; Staff:</p> <address class="l">1-800-360-4000<br>
+                <a class="l" href="emailto:owner@mbk.com">owner@ramsey.com</a> </address>
+            <pre>
+                <!-- my address -->
+                Store Address:
+                
+                Ramsey's
+                360 valley Drive
+                Rockford
+                IL, 61016
+            </pre>
+        </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<!--Dustin McDowell
+    SIU
+    date developed 9/22/2022
+    date tested 11/3/2022-->
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font: 87.5% Arial, Helvetica, sans-serif;
+                width: 500px;
+                margin: 20px auto;
+                padding: 20px;
+                border: 2px solid rgba(80, 170, 230, 0.89);
+            }
+            h1 {
+                color: #185413; 
+                font-size: 140%;
+            }
+            h2 {
+                font-size: 115%;
+                padding: .5em 0;
+            }
+            label {
+                color: #185413;
+                float: left;
+                width: 8em;
+                font-weight: bold;
+                text-align: left;
+            }
+            input, select {
+                width: 15em;
+                margin: 0 0 .5em 1em;
+            }
+            #web, #facebook, #twitter, #message{
+                text-align: right;
+            }
+            #button, #reset {
+                width: 7em;
+                background-color: silver;
+                box-shadow: 2px 2px 0 blue; }
+            #button {
+                margin-left: 9em;
+            }
+        </style>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/rollover.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="cake.html">Cakes</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <body>
+            <header>
+                
+            </header>
+            
+            <h1>Please fill out to contact us</h1>
+            <form name="myform" action="contact_entry.html" method="get">
+                
+                <h2>Contact information</h2>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="fullName" id="fullName" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="333-333-4444" placeholder="Ten Digits" required><br>
+
+                <h2>Aditional information</h2>
+                <label for="date">Creation Date:</label>
+                <input type="date" name="date" id="date" required><br>
+                <label for="description">Short Description:</label>
+                <textarea name="description" id="description" cols="50" rows="4"
+                placeholder="Enter a short description of what you want here..." maxlength="200"
+                minlength="50"></textarea>
+
+                <h2>How did you hear about us?</h2>
+                <label for="word">Word of Mouth:</label>
+                <input type="checkbox" name="word" id="web"><br>
+                <label for="web">Web Search:</label>
+                <input type="checkbox" name="web" id="web"><br>
+                <label for="facebook">Facebook:</label>
+                <input type="checkbox" name="facebook" id="facebook"><br>
+                <label for="twitter">Twitter:</label>
+                <input type="checkbox" name="twitter" id="twitter"><br>
+                <label for="tm">Text Message:</label>
+                <input type="checkbox" name="tm" id="em"><br>
+
+                <h2>Thank you for filling out the contact page!</h2>
+                <input type="submit" name="button" id="button" value="Send">
+                <input type="reset" name="reset" id="reset">
+            </form>
+        </body>
+</html>

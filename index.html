@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<!--Dustin McDowell
+    SIU
+    date developed 8/31/2022
+    date tested 10/21/2022-->
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Ramsey's</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script src="js/rollover.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+        <meta name="description" content="A place where you can get cakes.">
+        <meta name="keywords" content="ramsey,Ramsey,ramsey's,Ramsey's,Cake,cake,cupcake,
+        Cupcake,birthday,Birthday">
+    </head>
+        <body>
+            <header>
+                <div class="headimg">
+                    <img src="images/logo.jpg" alt="Logo" width="500">
+                </div>
+            </header>
+            <!--Audio Track-->
+            <audio loop autoplay>
+                <source src="audio/backgroundsounds.mp3" type="audio/mpeg">
+            </audio>
+                <nav id="mobile_menu"></nav>
+                <nav id="nav_menu">
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="cake.html">Cakes</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <h2 class="l">A cake shop for everyone!</h2>
+                <p class="l">Our goal is to get any and all of you to get a cake that you are looking for!</p>
+                <p class="l">We carry all kinds of cakes and are willing to make it how you want.</p>
+                    <!--a blockquote used to seperate the main text from the list-->
+                <blockquote>We make all different type of cakes.</blockquote>
+                <!--this is the like of bike that we "carry"-->
+                <ol class="l">
+                    <li>Layer Cakes</li> <li>Cupcakes</li> <li>Cakes for occasions</li>
+                </ol>
+                <!--inline element -->
+                <p class="l">If you can't find what you like in our store <em>then we will make one custom for you.</em></p> 
+                <p class="l">If you are looking for a lower price we have a <strong>end of year sale</strong>.</p>
+                <!--contect information--> 
+                <p class="l">How to contact Cheyanne Ramsey &amp; Staff:</p> <address class="l">1-800-360-4000<br>
+                    <a class="l" href="emailto:owner@mbk.com">owner@ramsey.com</a> </address>
+                <pre>
+                    <!-- my address -->
+                    Store Address:
+                    
+                    Ramsey's
+                    360 valley Drive
+                    Rockford
+                    IL, 61016
+                </pre>
+        </body>
+</html>
